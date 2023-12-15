@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .con {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to right, orange, gray);
+        
+      }
+      .header {
+        height: 7rem;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        font-size: 1.4rem;
+       
+        text-shadow: 4px 4px 7px;
+     
+      
+      }
+      .main {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .main > img{
+        height: 60%;
+        width: 30%;
+        margin: 3rem auto;
+        border-radius: 3rem;
+        box-shadow: 5px 5px 20px red;
+
+      }
+      .about{
+        position: absolute;
+        right: 1rem;
+        top: -2rem;
+      }
+     
+     
+      button {
+        height: 4rem;
+        width: 15rem;
+        font-size: 1.3rem;
+        background-color: black;
+        padding: 0.7rem 1.3rem;
+        outline: none;
+        border: navajowhite;
+        color: wheat;
+        font-weight: bold;
+        border-radius: 1rem 3rem 1rem 3rem;
+      }
+      button:hover {
+        background-color: plum;
+        color: black;
+        cursor: pointer;
+      }
+     
+      a {
+        height: 30%;
+        display: grid;
+        place-items: center;
+        text-decoration: none;
+      }
+      .login {
+        animation: bouncing 2s infinite;
+      }
+      .about > button{
+        background-color: pink;
+        border-radius: 2rem;
+       padding: 0;
+       color: black;
+       width: 10rem;
+       height: 3rem;
+      }
+
+      @keyframes bouncing {
+        0% {
+          margin-bottom: 0;
+        }
+        25% {
+          margin-bottom: 1rem;
+        }
+        50% {
+          margin-bottom: 0rem;
+        }
+        75% {
+          margin-bottom: 1rem;
+        }
+        100% {
+          margin-bottom: 0;
+        }
+      }
+     
+      @media (max-width: 380px) {
+        .header {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+
+      <div class="header">
+        <h1>𝓚𝓮𝓮𝓹 𝓝𝓸𝓽𝓮𝓼</h1>
+      </div>
+<a href="http://localhost:3000/about" class="about"><button>About Us</button></a>
+      <div class="main">
+          <img src="./images/pc_1.gif" alt="" class="right-img" />
+          <a href="http://localhost:3000/main"><button class="login">Login</button></a>
+        </div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>
